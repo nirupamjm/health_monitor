@@ -8,4 +8,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path("register/", v.register, name="register"), 
     path('home', main_views.home, name='home'), 
+    path('', main_views.home, name='home'), 
 ]
