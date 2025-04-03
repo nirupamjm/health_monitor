@@ -1,0 +1,18 @@
+<!-- filepath: /home/jollymni/Documents/git/django-projects/mysite/templates/main/error.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-danger">Error</h1>
+        <p>{{ error_message }}</p>
+        <p><strong>Details:</strong> {{ details }}</p>
+        <a href="/" class="btn btn-primary">Back to Home</a>
+    </div>
+</body>
+</html>
