@@ -1,0 +1,11 @@
+asgiref==3.8.1
+beautifulsoup4==4.13.3
+crispy-bootstrap4==2024.10
+crispy-bootstrap5==2025.4
+Django==5.1.7
+django-bootstrap4==25.1
+django-bootstrap5==25.1
+django-crispy-forms==2.3
+soupsieve==2.6
+sqlparse==0.5.3
+typing_extensions==4.13.0
