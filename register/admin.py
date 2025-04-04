@@ -10,3 +10,4 @@ class CustomUserAdmin(UserAdmin):
 print("Registering CustomUser model in admin...")
 
 admin.site.register(CustomUser, CustomUserAdmin)
+
