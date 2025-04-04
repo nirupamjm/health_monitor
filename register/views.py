@@ -1,17 +1,12 @@
-
 from django.shortcuts import render, redirect
 from .forms import RegisterForm
 
-
-# Create your views here.
-def register(response):
-    if response.method == "POST":
-        form = RegisterForm(response.POST)
+def register(request):
+    if request.method == 'POST':
+        form = RegisterForm(request.POST)
         if form.is_valid():
-            form.save()
-	
-        return redirect("/home")
+            form.save()  # Save the custom user
+            return redirect('login')  # Redirect to login page after successful registration
     else:
         form = RegisterForm()
-	
-    return render(response, "register/register.html", {"form":form})
+    return render(request, 'register/register.html', {'form': form})
