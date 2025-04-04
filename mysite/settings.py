@@ -39,8 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'crispy_forms',
     'crispy_bootstrap5',
-    'register.apps.RegisterConfig', 
-
+    'register',
 ]
 
 
@@ -132,4 +131,10 @@ CRISPY_TEMPLATE_PACK = "bootstrap5"
 
 LOGIN_REDIRECT_URL = "/"
 LOGOUT_REDIRECT_URL = "/"
+<<<<<<< HEAD
 LOGIN_URL = '/login/'  # Redirect to the correct login page
+
+AUTH_USER_MODEL = 'register.CustomUser'
+=======
+LOGIN_URL = '/login/'  # Redirect to the correct login page
+>>>>>>> origin/develop
